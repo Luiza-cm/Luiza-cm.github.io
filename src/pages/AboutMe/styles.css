@@ -1,0 +1,92 @@
+#page-about {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, var(--color-purple), var(--color-pure-pink));
+}
+
+.buttons-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1.6rem;
+}
+
+
+.body-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-content {
+    width: 90%;
+    background-color: black;
+    opacity: 0.6;
+    color: aliceblue;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.6rem;
+    border-radius: 2rem;
+}
+
+.description {
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.image-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 2rem;
+    gap: 2rem;
+}
+
+.profile-image {
+    height: 10rem;
+    width: auto;
+    border-radius: 50%;
+}
+
+.itens-container {
+    line-height: 2rem;
+}
+
+.itens-style {
+    margin-top: 1.6rem;
+    margin-bottom: 0.9rem;
+    margin-left: 1.6rem;
+    font:  600 1.7rem Archivo;
+}
+
+@media (min-width: 1100px) {
+
+    .page-header {
+        width: 70%;
+    }
+
+    .page-header .top-bar-content {
+        justify-content: center;
+    }
+    
+    .top-bar-container {
+        width: 70%;
+    
+    }
+
+    .body-container {
+        width: 70%;
+    }
+    
+    .body-content {
+        width: 70%;
+    }
+
+    .buttons-row {
+        width: 75%;
+      }
+}

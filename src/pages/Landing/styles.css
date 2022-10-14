@@ -1,0 +1,221 @@
+#page-landing {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: initial;
+    align-items: initial;
+
+    color: var(--color-white)
+}
+
+.title-container {
+    padding-top: 5.5rem;
+    padding-left: 3.125rem;
+}
+
+.title-container h1 {
+    font: 700 4.2rem Archivo;
+}
+
+.title-container span {
+    font: 400 2.2rem Poppins;
+}
+
+.image-container {
+    width: 100vw;
+    padding-top: 13rem;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    height: 22rem;
+}
+
+.buttons-container {
+    background-color: var(--color-black);
+    width: 100vw;
+    height: 40%;
+    margin-top: 9.06rem;
+    padding-top: 5.5rem;
+    padding-bottom: 6.6rem;
+    border-top-left-radius: 4.58rem;
+    border-top-right-radius: 4.58rem;
+}
+
+.buttons-container h2, h3 {
+    padding-left: 3.125rem;
+}
+
+.buttons-horizontal-scroll {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    gap: 1.6rem;
+}
+
+.buttons-horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.buttons-horizontal-scroll a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.buttons-horizontal-scroll p {
+    padding-left: 0;
+    padding-top: 1.0rem;
+}
+
+.buttons-horizontal-scroll a:first-child {
+    margin-left: 1rem;
+}
+
+.buttons-horizontal-scroll a:last-child {
+    margin-right: 1rem;
+}
+
+.button-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15.62rem;
+    height: 15.62rem;
+    background-image: linear-gradient(to right, var(--color-purple), var(--color-pure-pink));
+    border-radius: 2rem;
+}
+
+.button-about:hover {
+    background-image: linear-gradient(to right, #886cac, #ce8abd);
+}
+
+.button-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15.62rem;
+    height: 15.62rem;
+    background-image: linear-gradient(to right, var(--color-dark-blue), var(--color-pure-blue));
+    border-radius: 2rem;
+}
+
+.button-work:hover {
+    background-image: linear-gradient(to right, #7ba5c5, #acd8d8);
+}
+
+.button-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15.62rem;
+    height: 15.62rem;
+    background-image: linear-gradient(to right, var(--color-orange-pink), var(--color-dark-pink));
+    border-radius: 2rem;
+}
+
+.button-contact:hover {
+    background-image: linear-gradient(to right, #eba698, #be6d90);
+}
+
+@media (min-width: 1100px) {
+
+    #page-landing {
+        display: flex;
+        justify-content: space-around;
+    }
+    #page-landing-content {
+        max-width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        gap: 5rem;
+    }
+
+    .title-container {
+        margin-top: 5rem;
+    }
+
+    .title-container h1 {
+        font-size: 60px;
+    }
+    .title-container span {
+        font-size: 35px;
+    }
+    .image-container {
+        margin-top:0;
+        width: auto;
+    }
+    .image-container img {
+        height: 30rem;
+    }
+    .buttons-container {
+        width: 600px;
+        height: 100%;
+        box-shadow: 2px 2px 4px #000000;
+        margin-top: 0;
+        padding-top: 0;
+        border-radius: 0;
+    }
+    .buttons-container h2 {
+        margin-top: 15rem;
+        font-size: 25px;
+    }
+    .buttons-horizontal-scroll {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 5rem;
+        
+    }
+    .buttons-horizontal-scroll p {
+        font-size: 20px;
+    }
+    .buttons-horizontal-scroll a:first-child {
+        margin-left: 0;
+    }
+
+    .button-about {
+        width: 25.62rem;
+        height: 10rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        box-shadow: 2px 2px 4px #000000;
+    }
+
+    .button-work {
+        width: 25.62rem;
+        height: 10rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        box-shadow: 2px 2px 4px #000000;
+    }
+
+    .button-contact {
+        width: 25.62rem;
+        height: 10rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        box-shadow: 2px 2px 4px #000000;
+    }
+    
+    
+}

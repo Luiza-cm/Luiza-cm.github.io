@@ -1,0 +1,54 @@
+:root {
+    font-size: 60%;
+
+    --color-gray: #3A3A3A;
+    --color-black: #1D1E20;
+    --color-purple: #674395;
+    --color-pure-pink: #CD69B4;
+    --color-orange-pink: #EB8975;
+    --color-dark-pink: #AC5078;
+    --color-dark-blue: #508DBC;
+    --color-pure-blue: #86CECE;   
+    --color-white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100vh;
+}
+
+body {
+    background: var(--color-gray);
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body, input, button, textarea {
+    font: 500 1.6rem Archivo;
+}
+
+.container {
+    width: 90vw;
+    max-width: 700px;
+}
+
+@media (min-width: 1100px) {
+    :root {
+        font-size: 65.5%;
+    }
+}
+
+/* @media (min-width: 1100px) {
+    :root {
+        font-size: 75.5%;
+    }
+} */
